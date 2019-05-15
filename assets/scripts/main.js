@@ -1,3 +1,5 @@
+// TODO: Add sources to the readme
+
 const DEFAULT_MSG = {
   "bulletins" : [
     {"message": "Check the 436I Slack channel"},
@@ -7,6 +9,10 @@ const DEFAULT_MSG = {
 }
 
 let bulletins = JSON.parse(DEFAULT_MSG);
+
+function initialize() {
+  alert("hellooo!!!!");
+}
 
 function clearMessageBox() {
   document.getElementById("msg-box").value = "";
