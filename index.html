@@ -4,37 +4,45 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <script type="text/javascript" src="assets/scripts/main.js">
-//     function codeAddress() {
-//     alert('ok');
-// }
-// window.onload = codeAddress;
-    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
     <title>Bulletin</title>
   </head>
 
   <body>
+      <div class="site-header__menu">
+        <nav class="main-nav">
+          <div class="main-menu-navigation-container">
+            <ul id="primary-menu" class="navigation__menu">
+              <li>
+                <a href=index.html>Home</a>
+              </li>
+              <li>
+                <a href=about.html>About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-    <nav>
-      <a class="active" href="#home">Home</a>
-      <a href="about.html">About</a>
-    </nav>
+      <div class="">
+        <h1>Bulletin</h1>
 
-    <h1>Bulletin</h1>
+        <form>
+          <p>Bulletin: <br>
+            <textarea id="msg-box" placeholder="your bulletin"></textarea>
+          </p>
+            <input type="button" value="Add" onclick="postBulletin()">
+            <input type="button" value="Clear" onclick="clearMessageBox()">
+        </form>
+      </div>
 
-    <div class="">
-      <form>
-        <p>Bulletin: <br>
-          <textarea id="msg-box" placeholder="your bulletin"></textarea>
-        </p>
-          <input type="button" value="Add" onclick="postBulletin()">
-          <input type="button" value="Clear" onclick="clearMessageBox()">
-      </form>
-    </div>
-
-    <ul id="bulletins">
-
-    </ul>
+      <div class="">
+        <input type="button" value="Clear All" onclick="clearBulletins()">
+        <ul id="bulletins">
+        </ul>
+      </div>
 
   </body>
+
 </html>

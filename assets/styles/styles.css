@@ -1,4 +1,52 @@
+div {
+  display: block;
+}
+
+#main-nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul {
+  background-color: #D9D9D9;
+  display: inline;
+}
+
+#primary-menu a {
+  font-family: Helvetica;
+  text-decoration: none;
+}
+/*
+
 h1 {
   font-family: Arial;
   color: red;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav a {
+  padding: 16px;
+  color: #4484CE;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-
+  text-decoration: none;
+  border-right: 1px solid #D9D9D9
+}
+
+nav a:hover {
+  color: #4484CE;
+  background-color: #D9D9D9;
+}
+
+.active {
+  color: white;
+  background-color: #4484CE;
 }
