@@ -10,28 +10,28 @@ function clearMessageBox() {
 }
 
 function postBulletin() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("msg-box").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === "") {
-    alert("You must write something!");
-  } else {
+  let message = document.getElementById("msg-box").value;
+  if (message) {
+    let li = document.createElement("li");
+    li.innerHTML = message;
+    addClearBox(li);
     document.getElementById("bulletins").appendChild(li);
   }
   clearMessageBox();
-  // var span = document.createElement("SPAN");
-  // var txt = document.createTextNode("\u00D7");
-  // span.className = "close";
-  // span.appendChild(txt);
-  // li.appendChild(span);
-  //
-  // for (i = 0; i < close.length; i++) {
-  //   close[i].onclick = function() {
-  //     var div = this.parentElement;
-  //     div.style.display = "none";
-  //   }
-  // }
+}
+
+function addClearBox(li) {
+  let span = document.createElement("SPAN");
+  let txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+
+  span.onclick = function() {
+    let div = this.parentElement;
+    div.style.display = "none";
+  }
+
+  li.appendChild(span);
 }
 
 function clearBulletins() {
@@ -43,9 +43,23 @@ function makeList() {
   let arr = bulletins["bulletins"];
 
   for (let i = 0; i < arr.length; i++) {
-    let msg = document.createElement("li");
-    msg.innerHTML = arr[i];
-    document.getElementById("bulletins").appendChild(msg);
+    let li = document.createElement("li");
+    li.innerHTML = arr[i];
+    addClearBox(li);
+
+    // let span = document.createElement("SPAN");
+    // let txt = document.createTextNode("\u00D7");
+    // span.className = "close";
+    // span.appendChild(txt);
+    //
+    // span.onclick = function() {
+    //   let div = this.parentElement;
+    //   div.style.display = "none";
+    // }
+    //
+    // li.appendChild(span);
+
+    document.getElementById("bulletins").appendChild(li);
   }
 }
 

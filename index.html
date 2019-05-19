@@ -10,38 +10,35 @@
   </head>
 
   <body>
-      <div class="site-header__menu">
-        <nav class="main-nav">
-          <div class="main-menu-navigation-container">
-            <ul id="primary-menu" class="navigation__menu">
-              <li>
-                <a href=index.html>Home</a>
-              </li>
-              <li>
-                <a href=about.html>About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div class="nav">
+        <a class = "active" href=index.html>Home</a>
+        <a href=about.html>About</a>
       </div>
 
-      <div class="">
-        <h1>Bulletin</h1>
+      <div class="flex-container">
+        <div>
+          <h1>Bulletin Board</h1>
+        </div>
 
-        <form>
-          <p>Bulletin: <br>
-            <textarea id="msg-box" placeholder="your bulletin"></textarea>
-          </p>
-            <input type="button" value="Add" onclick="postBulletin()">
-            <input type="button" value="Clear" onclick="clearMessageBox()">
-        </form>
-      </div>
+        <div>
+          <textarea id="msg-box" placeholder="What's on your mind?"></textarea>
+        </div>
 
-      <div class="">
-        <input type="button" value="Clear All" onclick="clearBulletins()">
-        <ul id="bulletins">
-        </ul>
-      </div>
+        <div>
+          <input type="button" value="Add" onclick=postBulletin()>
+          <input type="button" value="Clear" onclick=clearMessageBox()>
+        </div>
+
+        <div id = "timeline">
+          <h2>Timeline</h2>
+          <input type="button" value="Clear All" onclick=clearBulletins()>
+        </div>
+
+        <div>
+          <ul id="bulletins"></ul>
+        </div>
+
+    </div>
 
   </body>
 

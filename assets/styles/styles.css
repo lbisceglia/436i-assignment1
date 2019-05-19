@@ -1,23 +1,108 @@
-div {
-  display: block;
+/* * {
+  box-sizing: border-box;
 }
 
-#main-nav li {
-  display: inline;
+body {
+  background-color: #EFEFEF;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.nav {
+  background-color: #A9A9A9;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.nav a {
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1%;
+  height: 250px;
+  overflow-y: auto;
+  text-align: justify;
 }
 
-#main-nav ul {
-  background-color: #D9D9D9;
-  display: inline;
+input:hover {
+  background-color: #FF3B3F;
+  color: #FFFFFF;
 }
 
-#primary-menu a {
+textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #535B60;
+  resize: none;
+  text-indent: 0;
+}
+/*
+#buttons {
+  justify-content: center;
+} */
+
+
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin:0px auto;
+}
+
+.flex-container > div {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#timeline div {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+} */
+
+.close {
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* div {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+
+/* #primary-menu a {
   font-family: Helvetica;
   text-decoration: none;
-}
+} */
+
+/* #nav a {
+  padding: 16px;
+  color: #4484CE;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-
+  text-decoration: none;
+  border-right: 1px solid #D9D9D9
+} */
 /*
 
 h1 {
@@ -29,16 +114,6 @@ nav {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-nav a {
-  padding: 16px;
-  color: #4484CE;
-  background-color: #FFFFFF;
-  text-align: center;
-  text-
-  text-decoration: none;
-  border-right: 1px solid #D9D9D9
 }
 
 nav a:hover {
