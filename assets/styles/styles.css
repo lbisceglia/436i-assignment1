@@ -43,7 +43,7 @@ ul {
   margin: 0;
   padding: 1%;
   min-height: 25px;
-  max-height: 200px;
+  max-height: 250px;
   overflow-x: auto;
   overflow-y: auto;
   text-align: justify;
@@ -107,9 +107,9 @@ textarea {
   justify-content: center;
   min-width: 500px;
   margin:0px auto;
-  margin-bottom: 50px;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-bottom: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   flex-wrap: wrap-reverse;
 }
 
@@ -138,4 +138,19 @@ p {
 
 img {
   border-radius: 50%;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  background-color: #4484CE;
+  height: 1.5px;
+}
+
+#bulletins:before {
+  content: "";
+  display: table;
+  clear: both;
 }
