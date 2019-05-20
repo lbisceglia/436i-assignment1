@@ -52,18 +52,24 @@ ul {
 }
 
 ul li {
+  position: relative;
   background: #FFFFFF;
-  padding: 3%;
-  margin: 2%;
+  padding: 12px 50px 12px 8px;
+  margin: 4px;
   align-items: center;
   border-radius: 3px;
   word-wrap: break-word;
 }
 
 .close {
-  float: right;
+  /* float: right;
   padding-left: 4px;
-  padding-right: 4px;
+  padding-right: 4px; */
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 6px 10px 6px 10px;
 }
 
 .close:hover {
