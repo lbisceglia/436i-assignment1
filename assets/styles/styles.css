@@ -41,9 +41,9 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 1%;
+  padding: 0px 3px;
   min-height: 25px;
-  max-height: 250px;
+  max-height: 200px;
   overflow-x: auto;
   overflow-y: auto;
   text-align: justify;
@@ -55,7 +55,7 @@ ul li {
   position: relative;
   background: #FFFFFF;
   padding: 12px 50px 12px 8px;
-  margin: 4px;
+  margin: 6px 3px;
   align-items: center;
   border-radius: 3px;
   word-wrap: break-word;

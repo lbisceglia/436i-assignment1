@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="assets/scripts/main.js"></script>
     <title>JotDown</title>
   </head>
@@ -21,7 +20,8 @@
         </div>
 
         <div>
-          <textarea id="msg-box" placeholder="Jot something down..."></textarea>
+          <textarea id="msg-box" placeholder="Jot something down..."
+          onkeypress=submitOnEnter(event)></textarea>
         </div>
 
         <div class = "box-buttons">

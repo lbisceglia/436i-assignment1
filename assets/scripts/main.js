@@ -51,4 +51,11 @@ function makeList() {
   }
 }
 
+function submitOnEnter(event){
+    if(event.which === 13){
+        event.preventDefault(); // Prevents the addition of a new line in the text field (not needed in a lot of cases)
+        postBulletin();
+    }
+}
+
 window.onload=makeList;
