@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="assets/scripts/main.js"></script>
-    <title>Bulletin</title>
+    <title>JotDown</title>
   </head>
 
   <body>
@@ -17,26 +17,26 @@
 
       <div class="flex-container">
         <div>
-          <h1>Bulletin Board</h1>
+          <h1>JotDown</h1>
         </div>
 
         <div>
-          <textarea id="msg-box" placeholder="What's on your mind?"></textarea>
+          <textarea id="msg-box" placeholder="Jot something down..."></textarea>
         </div>
 
-        <div>
+        <div class = "box-buttons">
           <input type="button" value="Add" onclick=postBulletin()>
           <input type="button" value="Clear" onclick=clearMessageBox()>
         </div>
 
-        <div id = "timeline">
-          <h2>Timeline</h2>
-          <input type="button" value="Clear All" onclick=clearBulletins()>
-        </div>
+          <div id = "timeline">
+            <h2>Notes</h2>
+            <input type="button" value="Clear All" onclick=clearBulletins()>
+          </div>
 
-        <div>
-          <ul id="bulletins"></ul>
-        </div>
+          <div>
+            <ul id="bulletins"></ul>
+          </div>
 
     </div>
 

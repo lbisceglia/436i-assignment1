@@ -20,6 +20,10 @@ function postBulletin() {
   clearMessageBox();
 }
 
+function clearBulletins() {
+  document.getElementById("bulletins").innerHTML = "";
+}
+
 function addClearBox(li) {
   let span = document.createElement("SPAN");
   let txt = document.createTextNode("\u00D7");
@@ -34,10 +38,6 @@ function addClearBox(li) {
   li.appendChild(span);
 }
 
-function clearBulletins() {
-  document.getElementById("bulletins").innerHTML = "";
-}
-
 function makeList() {
   let bulletins = JSON.parse(DEFAULT_MSG);
   let arr = bulletins["bulletins"];
@@ -46,18 +46,6 @@ function makeList() {
     let li = document.createElement("li");
     li.innerHTML = arr[i];
     addClearBox(li);
-
-    // let span = document.createElement("SPAN");
-    // let txt = document.createTextNode("\u00D7");
-    // span.className = "close";
-    // span.appendChild(txt);
-    //
-    // span.onclick = function() {
-    //   let div = this.parentElement;
-    //   div.style.display = "none";
-    // }
-    //
-    // li.appendChild(span);
 
     document.getElementById("bulletins").appendChild(li);
   }
