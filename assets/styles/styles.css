@@ -4,7 +4,7 @@
 
 body {
   background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -13,6 +13,7 @@ body {
   background-color: #D9D9D9;
 }
 
+/* Completed with help from classmate Claire Iacono */
 .nav {
   background-color: #EFEFEF;
   color: #4484CE;
@@ -38,6 +39,7 @@ body {
   color: white;
 }
 
+/* Completed with help from classmate Claire Iacono */
 ul {
   list-style-type: none;
   margin: 0;
@@ -62,10 +64,6 @@ ul li {
 }
 
 .close {
-  /* float: right;
-  padding-left: 4px;
-  padding-right: 4px; */
-
   position: absolute;
   right: 0;
   top: 0;
@@ -106,19 +104,20 @@ textarea {
   border-radius: 5px;
 }
 
-
+/* Completed with help from classmate Claire Iacono */
 .flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 500px;
   margin:0px auto;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   padding-left: 10%;
   padding-right: 10%;
   flex-wrap: wrap-reverse;
 }
 
+/* Completed with help from classmate Claire Iacono */
 .flex-container > div {
   display: inline-block;
   text-align: center;

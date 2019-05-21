@@ -9,6 +9,7 @@ function clearMessageBox() {
   document.getElementById("msg-box").value = "";
 }
 
+// W3 Schools To Do list tutorial used to add elements
 function postBulletin() {
   let message = document.getElementById("msg-box").value;
   if (message) {
@@ -24,6 +25,7 @@ function clearBulletins() {
   document.getElementById("bulletins").innerHTML = "";
 }
 
+// W3 Schools To Do list tutorial used to create clear boxes
 function addClearBox(li) {
   let span = document.createElement("SPAN");
   let txt = document.createTextNode("\u00D7");
@@ -51,6 +53,7 @@ function makeList() {
   }
 }
 
+// Stack Overflow post used for submitting on Enter
 function submitOnEnter(event){
     if(event.which === 13){
         event.preventDefault(); // Prevents the addition of a new line in the text field (not needed in a lot of cases)
